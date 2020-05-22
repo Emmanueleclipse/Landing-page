@@ -1,0 +1,207 @@
+/*@import
+  'vendors/normalize';*/
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Basic styles for links
+ */
+/*a {
+  color: $brand-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}*/
+/**
+ * Basic typography style for copy text
+ */
+html {
+  font-size: 100%; }
+
+body {
+  line-height: 1.4; }
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+a,
+a:visited {
+  color: inherit; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+.text-primary {
+  color: #0085FF !important; }
+
+.text-danger {
+  color: #F04683 !important; }
+
+.btn-danger {
+  background: #F04683 !important; }
+
+.section {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.btn {
+  border-radius: 15px; }
+
+.header-top form input {
+  background: #F2F6FA; }
+
+.header-top .header-img {
+  max-width: 90%; }
+
+.header-top form button {
+  white-space: nowrap; }
+
+@media (max-width: 576px) {
+  .header-top form .form-group {
+    display: flex;
+    align-items: center; } }
+
+.footer .logo {
+  width: 200px;
+  margin-bottom: 20px; }
+
+.footer .footer-bottom .icon {
+  padding: 10px; }
+
+.top-nav li:not(:last-child) {
+  margin-right: 20px; }
+
+.top-nav .logo {
+  width: 200px; }
+
+.works {
+  background-color: #F2F6FA; }
+  .works .floating-dot {
+    width: 35px;
+    height: 35px;
+    background: #F04683;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 10%; }
+  .works .works-content {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .works .works-content .title {
+      width: 50%;
+      margin: auto;
+      text-align: center; }
+      .works .works-content .title img {
+        width: 60px; }
+
+.choose .choose-content .title img {
+  width: 60px; }
+
+.choose .choose-content .line-img {
+  max-width: 25%; }
+
+.choose .choose-content .girl-img {
+  max-width: 70%; }
+
+.signup-form .input-group {
+  position: relative; }
+  .signup-form .input-group img {
+    width: 13px; }
+
+.signup-form .input-group .input-group-prepend {
+  position: absolute;
+  top: 2px;
+  height: 90%;
+  left: 3px;
+  z-index: 5; }
+
+.signup-form .input-group span {
+  background: transparent;
+  border-right: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #36a6ef;
+  width: 40px !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.signup-form .input-group input {
+  height: 40px;
+  background-color: transparent;
+  /* border-left: 0px; */
+  outline: none;
+  padding-left: 3rem;
+  border-radius: 10px !important;
+  /* border: 1px solid red !important; */ }
+
+.signup-section {
+  margin-top: -200px; }
+  .signup-section .signup-content {
+    background-color: #F2F6FA;
+    padding-top: 130px;
+    padding-bottom: 50px; }
+  .signup-section .title {
+    padding-left: 40px; }
+    .signup-section .title img {
+      width: 60px; }
+
+.signup-btn {
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.carousel .slide {
+  margin-left: 10px;
+  margin-right: 10px; }
+  .carousel .slide .card {
+    border-radius: 10px; }
+    .carousel .slide .card .numbering {
+      margin-bottom: 15px; }
+  .carousel .slide .circle {
+    background: #0085FF;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; }
+
+.carousel .owl-nav {
+  text-align: right;
+  position: absolute;
+  right: 0; }
+  .carousel .owl-nav button {
+    outline: none;
+    margin-right: 15px;
+    margin-left: 15px; }
+    .carousel .owl-nav button span {
+      font-size: 50px; }
