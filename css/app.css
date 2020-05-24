@@ -1,4 +1,4 @@
-/*@import
+﻿/*@import
   'vendors/normalize';*/
 /**
  * Set up a decent box model on the root element
@@ -41,7 +41,7 @@ body {
   line-height: 1.4; }
 
 * {
-  font-family: inherit;
+  font-family: 'Lora', serif;
   font-size: inherit;
   line-height: inherit; }
 
