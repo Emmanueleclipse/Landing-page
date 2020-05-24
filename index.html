@@ -15,6 +15,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <!--<link href="css/owl.theme.default.css" rel="stylesheet" />-->
 
     <!-- Custom styles for this template -->
     <link href="css/app.css" rel="stylesheet" />
@@ -24,27 +25,28 @@
 <body>
     <nav class="navbar navbar-expand-md top-nav">
         <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="fa fa-bars"></span>
             </button>
+            <img src="images/logosmallscreen.png" class="img-fluid logo-small d-block d-md-none" alt="Alternate Text" />
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-none d-sm-block">
                     <li class="nav-item mr-4">
                         <a class="nav-link" href="#"><img src="images/Logo.png" class="img-fluid logo" alt="Alternate Text" /></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto social-icons">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Introduction</a>
+                        <a class="nav-link" data-scroll href="#introduction">Introduction</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">How It Works</a>
+                        <a class="nav-link" data-scroll href="#howItWorks">How It Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Why Choose Us</a>
+                        <a class="nav-link" data-scroll href="#chooseUs">Why Choose Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" data-scroll href="#signup">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -52,9 +54,9 @@
 
     </nav>
     <div class="container">
-        <hr />
+        <hr style="margin-top:0;" />
     </div>
-    <header class="header-top">
+    <header class="header-top" id="introduction">
         <div class="header-content">
             <div class="container">
                 <div class="row">
@@ -63,30 +65,38 @@
                             <span>Property Ownership</span>
                             <span class="d-block">For <span class="text-primary">Just A Few Bucks.</span></span>
                         </h1>
+                        <img src="images/cycle.png" class="img-fluid header-img d-block d-sm-none" alt="Alternate Text" />
                         <p class="mb-4">
                             The hottest real estate deals just aren’t available for everyday people. We’re
                             democratising the game so that everyone has a chance to get into the market.
 
                         </p>
-                        <form class="form-inline mb-4">
+                        <form class="form-inline mb-4 d-none d-sm-block">
                             <div class="form-group">
-                                <input type="text" class="form-control mr-2" placeholder="Enter your email address" />
-                                <button class="btn btn-danger">Get Early Access</button>
+                                <input type="text" class="form-control mr-2 mb-2" placeholder="Enter your email address" />
+                                <button class="btn btn-danger mb-2">Get Early Access</button>
                             </div>
                         </form>
-                        <hr style="width:65%;" />
-                        <div class="row flex-nowrap">
-                            <div class="col-sm-4">
-                                <h1 class="text-primary">0</h1>
-                                <p>Barrier To Entry</p>
+                        <hr style="width:65%;" / class="d-none d-sm-block">
+                        <div class="entry-exprience">
+                            <div class="row flex-nowrap ">
+                                <div class="col-sm-4">
+                                    <h1 class="text-primary">0</h1>
+                                    <p>Barrier To Entry</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h1 class="text-danger">$150m+</h1>
+                                    <p>Team Property Management Experience</p>
+                                </div>
+
                             </div>
-                            <div class="col-sm-8">
-                                <h1 class="text-danger">$150m+</h1>
-                                <p>Team Property Management Experience</p>
+                            <div class="d-block d-sm-none">
+                                <button class="btn btn-danger btn-block">Get Early Access</button>
                             </div>
                         </div>
+
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 d-none d-sm-block">
                         <img src="images/cycle.png" class="img-fluid header-img" alt="Alternate Text" />
                     </div>
 
@@ -95,7 +105,7 @@
         </div>
     </header>
 
-    <section class="works section">
+    <section class="works section" id="howItWorks">
         <div class="floating-dot"></div>
         <div class="works-content">
             <div class="title">
@@ -107,7 +117,7 @@
                     well for ourselves your doing just as well as us.
                 </p>
             </div>
-            <div class="container">
+            <div class="container carousel-container">
                 <div class="owl-carousel owl-theme carousel">
                     <div class="slide">
                         <div class="card">
@@ -171,7 +181,7 @@
     </section>
 
 
-    <section class="section choose">
+    <section class="section choose" id="chooseUs">
         <div class="choose-content">
             <div class="container">
                 <div class="row">
@@ -183,34 +193,34 @@
                                 We’re the new, easier way to invest in property.
                             </p>
                         </div>
-                        <div class="my-3">
+                        <div class="my-3 d-none d-sm-block">
                             <img src="images/vector-line.png" class="img-fluid line-img" alt="Alternate Text" />
                         </div>
-                        <div class="my-3">
+                        <div class="my-3 girl-img-container">
                             <img src="images/girl-announcing.png" class="img-fluid girl-img" alt="Alternate Text" />
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 choose-right">
                         <div class="row">
                             <div class="col-sm-6">
-                                <img src="images/handbuidling.png" class="img-fluid" alt="Alternate Text" />
-                                <h5>Hands-Off Investment</h5>
+                                <img src="images/handbuidling.png" class="img-fluid mb-3" alt="Alternate Text" />
+                                <h5 class="mb-3">Hands-Off Investment</h5>
                                 <p>
                                     From collecting rent, to everyday maintenance. Prinvesto removes
                                     the unpredictable headaches that come with being a homeowner.
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/building.png" class="img-fluid" alt="Alternate Text" />
-                                <h5>Total Accessibility</h5>
+                                <img src="images/building.png" class="img-fluid mb-3" alt="Alternate Text" />
+                                <h5 class="mb-3">Total Accessibility</h5>
                                 <p>
                                     When anyone can invest in a property for just a few dollars,
                                     Prinvesto gives everyone a chance at homeownership.
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/badge.png" class="img-fluid" alt="Alternate Text" />
-                                <h5>Property Team Expertise</h5>
+                                <img src="images/badge.png" class="img-fluid mb-3" alt="Alternate Text" />
+                                <h5 class="mb-3">Property Team Expertise</h5>
                                 <p>
                                     Our curated selection of properties for you to invest in
                                     are hand-picked and constantly updated by our property team,
@@ -219,8 +229,8 @@
                                 </p>
                             </div>
                             <div class="col-sm-6">
-                                <img src="images/user.png" class="img-fluid" alt="Alternate Text" />
-                                <h5>Worthy Locations</h5>
+                                <img src="images/user.png" class="img-fluid mb-3" alt="Alternate Text" />
+                                <h5 class="mb-3">Worthy Locations</h5>
                                 <p>
                                     Everyone knows that location is almost everything in real estate,
                                     and that’s why Prinvesto only buys properties in areas that our
@@ -235,12 +245,12 @@
         </div>
     </section>
 
-    <section class="section signup-section">
+    <section class="section signup-section" id="signup">
         <div class="signup-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3 class="mb-4">Create An Account</h3>
+                <div class="row flex-wrap-reverse">
+                    <div class="col-sm-6 signup-form-container">
+                        <h3 class="mb-4 d-none d-sm-block">Create An Account</h3>
                         <form class="signup-form">
                             <div class="form-group">
                                 <div class="input-group">
@@ -290,8 +300,8 @@
                             </div>
 
                             <div class="row">
-                                <div class="col d-flex align-items-center ">
-                                    <button class="btn btn-danger mr-3">Sign Up</button>
+                                <div class="col d-flex align-items-center mb-4 flex-wrap-reverse">
+                                    <button class="btn btn-danger mr-3 text-nowrap signup-btn">Sign Up</button>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
                                         <label class="custom-control-label" for="customCheck">You agree to the Terms and Conditions.</label>
@@ -387,6 +397,7 @@
     <script src="Scripts/jquery-3.0.0.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="Scripts/bootstrap.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
     <script src="js/app.js"></script>
 
 </body>
