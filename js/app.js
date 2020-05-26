@@ -1,8 +1,8 @@
 ﻿$(document).ready(function () {
-    $(document).ready(function () {
         $('.owl-carousel').owlCarousel({
             //autoplay: true,
             responsiveClass: true,
+            navText: ["<img src='images/arrowleft.png'>", "<img src='images/arrowright.png'>"],
             responsive: {
                 0: {
                     items: 1,
@@ -21,7 +21,6 @@
                 }
             }
         });
-    });
 
   
 

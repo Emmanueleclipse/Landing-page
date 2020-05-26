@@ -1,4 +1,4 @@
-/*@import
+﻿/*@import
   'vendors/normalize';*/
 /**
  * Set up a decent box model on the root element
@@ -339,9 +339,12 @@ p {
   margin-left: 10px;
   margin-right: 10px; }
   .carousel .slide .card {
-    border-radius: 10px; }
+    border-radius: 10px;
+    min-height: 195px; }
     .carousel .slide .card .numbering {
       margin-bottom: 15px; }
+    .carousel .slide .card .card-body p {
+      font-size: 14px; }
     @media (max-width: 576px) {
       .carousel .slide .card .card-body {
         padding-bottom: 0; }
