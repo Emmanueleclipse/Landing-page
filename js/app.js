@@ -1,28 +1,28 @@
 ﻿$(document).ready(function () {
-        $('.owl-carousel').owlCarousel({
-            //autoplay: true,
-            responsiveClass: true,
-            navText: ["<img src='images/arrowleft.png'>", "<img src='images/arrowright.png'>"],
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false,
-                    dots: true
-                },
-                600: {
-                    items: 2,
-                    nav: true,
-                    dots: false
-                },
-                900: {
-                    items: 3,
-                    nav: true,
-                    dots: false
-                }
+    $('.owl-carousel').owlCarousel({
+        //autoplay: true,
+        responsiveClass: true,
+        navText: ["<img src='images/arrowleft.png'>", "<img src='images/arrowright.png'>"],
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            600: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+            900: {
+                items: 3,
+                nav: true,
+                dots: false
             }
-        });
+        }
+    });
 
-  
+
 
     $('#collapsibleNavbar')
         .on('shown.bs.collapse', function () {
@@ -41,4 +41,10 @@
     })
 
     var scroll = new SmoothScroll('a[href*="#"]');
+    $("#getEarlyAccessFooterBtn").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#getEarlyAccessInput").offset().top - 25
+        }, 1000);
+        $("#getEarlyAccessInput").focus();
+    });
 })

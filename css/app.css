@@ -87,7 +87,7 @@ p {
 .header-top .header-img {
   max-width: 90%; }
 
-.header-top form button {
+.header-top form a {
   white-space: nowrap;
   padding: 12px 20px; }
 
@@ -178,7 +178,13 @@ p {
     border-radius: 50%;
     position: absolute;
     transform: translateY(-50%);
-    left: 10%; }
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer; }
     @media (max-width: 576px) {
       .works .floating-dot {
         display: none; } }
